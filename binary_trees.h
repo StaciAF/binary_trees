@@ -30,6 +30,10 @@ typedef struct binary_tree_s bst_t;
 typedef struct binary_tree_s avl_t;
 typedef struct binary_tree_s heap_t;
 
+typedef int bool;
+#define TRUE 1
+#define FALSE 0
+
 /** print function given for project **/
 void binary_tree_print(const binary_tree_t *);
 
@@ -84,6 +88,7 @@ int binary_tree_is_full(const binary_tree_t *tree);
 
 /** 16-binary_tree_is_perfect.c **/
 int binary_tree_is_perfect(const binary_tree_t *tree);
+int _pow(int base, int power);
 
 /** 17-binary_tree_sibling.c **/
 binary_tree_t *binary_tree_sibling(binary_tree_t *node);
