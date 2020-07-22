@@ -42,6 +42,6 @@ int _pow(int base, int power)
 	{
 		result *= base;
 	}
-	printf("%d\n", result);
+
 	return (result);
 }
