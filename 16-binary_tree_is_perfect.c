@@ -38,6 +38,9 @@ int _pow(int base, int power)
 {
 	int result = base, i;
 
+	if (power == 0)
+		return (1);
+
 	for (i = 1; i < power; i++)
 	{
 		result *= base;
