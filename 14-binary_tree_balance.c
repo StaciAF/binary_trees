@@ -9,14 +9,12 @@
 
 int binary_tree_balance(const binary_tree_t *tree)
 {
-	size_t l_h, r_h, balance;
+	int l_h, r_h, balance;
 
 	if (tree == NULL)
 		return (0);
-	l_h = binary_tree_height(tree->left) + 1;
-	printf("%lu\n", (unsigned long)l_h);
-	r_h = binary_tree_height(tree->right) + 1;
-	printf("%lu\n", (unsigned long)r_h);
+	l_h = good_height(tree->left) + 1;
+	r_h = good_height(tree->right) + 1;
 	balance = l_h - r_h;
-	return ((int)balance);
+	return (balance);
 }
